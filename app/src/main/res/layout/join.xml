@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:weightSum="10">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAFE"
+        android:textSize="70dp"
+        android:textColor="@color/EditColor2"
+        android:fontFamily="@font/kgsummersunshineblackout"/>
+
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="6"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 아이디    "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginRight="15dp" />
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:hint=" 아이디"
+            android:textSize="10dp"
+            android:background="@drawable/border"
+            android:theme="@style/EditTheme2"
+            android:id="@+id/joinid"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="중복확인"
+            android:textColor="#FFFFFF"
+            android:background="@color/EditColor2"
+            android:textSize="10dp"
+            android:id="@+id/idcheck"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp" />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 비밀번호"
+                android:textSize="10dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinpwd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginRight="15dp" />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 비밀번호 확인"
+                android:textSize="10dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinpwd2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름       "
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                android:layout_marginRight="15dp" />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 이름"
+                android:textSize="10dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinname"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="핸드폰   "
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 핸드폰번호(-를 빼고 입력해주세요)"
+                android:textSize="8dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinphone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="이메일   "
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 이메일 주소"
+                android:textSize="10dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinmail"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="금고S/N"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:hint=" 금고 시리얼번호"
+                android:textSize="10dp"
+                android:background="@drawable/border"
+                android:theme="@style/EditTheme2"
+                android:id="@+id/joinserial"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@color/EditColor2"
+            android:textColor="#FFFFFF"
+            android:text="가입"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/joinbtn2"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

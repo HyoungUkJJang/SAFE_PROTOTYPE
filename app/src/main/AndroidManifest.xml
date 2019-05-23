@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.win.safe">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- 스플래시 액티비티-->
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  여기까지(스플래시 액티비티) -->
+
+
+        <!-- 메인 액티비티-->
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <!--  여기까지(메인 액티비티) -->
+
+
+        <!--  회원가입 액티비티 -->
+        <activity android:name=".Join"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <!--  여기까지(회원가입 액티비티) -->
+
+
+        <!-- 비밀번호찾기1 액티비티 -->
+        <activity android:name=".FindPage1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <!--  여기까지(비밀번호찾기1 액티비티) -->
+
+        <!-- 비밀번호찾기2 액티비티 -->
+        <activity android:name=".FindPage2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <!--  여기까지(비밀번호찾기2 액티비티) -->
+
+        <!-- 메인페이지1 액티비티 -->
+        <activity android:name=".MainPage1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <!--여기까지(메인페이지1 액티비티)-->
+
+        <!-- CCTV 액티비티 -->
+        <activity android:name=".CCTV"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <!--여기까지(CCTV 액티비티)-->
+        <!-- OTP 액티비티 -->
+        <activity android:name=".OTP"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <!--여기까지(OTP 액티비티)-->
+
+        <!-- changepwd 액티비티 -->
+        <activity android:name=".ChangePwd"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <!--여기까지(changepwd 액티비티)-->
+
+        <!-- changepwd 액티비티 -->
+        <activity android:name=".UseHistoryView"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        </activity>
+        <!--여기까지(changepwd 액티비티)-->
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+    </manifest>

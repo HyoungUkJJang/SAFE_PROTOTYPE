@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+      <!--  <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar"> -->
+
+
+    <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/splash4</item>
+    </style>
+
+    <style name="EditTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/EditColor</item>
+    </style>
+
+    <style name="EditTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/EditColor2</item>
+    </style>
+    <style name="EditTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/EditColor3</item>
+    </style>
+    <style name="EditTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/EditColor4</item>
+    </style>
+
+
+</resources>
